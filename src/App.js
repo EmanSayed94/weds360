@@ -8,11 +8,7 @@ import './App.css'
 import { Container } from './globalStyles'
 import GlobalStyle from './globalStyles'
 import Header from './components/Header/Header'
-import { PhotoSectionContainer } from './elements/photosContainer'
-import ImageListing from './components/ImageListing/ImageListing'
-import Filter from './components/Filter/Filter'
-import Pagination from './components/Pagination.js/Pagination'
-import BreadCrumb from './components/BreadCrumb/BreadCrumb'
+import HomePage from './features/Home/Home'
 
 function App() {
   return (
@@ -21,12 +17,7 @@ function App() {
       <GlobalStyle />
       <Container>
         <Header />
-        <BreadCrumb />
-        <PhotoSectionContainer>
-          <Filter />
-          <ImageListing />
-        </PhotoSectionContainer>
-        <Pagination />
+        <HomePage />
       </Container>
 
       {/* <header className="App-header">
