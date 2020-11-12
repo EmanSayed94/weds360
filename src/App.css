@@ -25,7 +25,46 @@
 .App-link {
   color: rgb(112, 76, 182);
 }
+.pagination-list{
+  display: flex;
+  list-style: none;
+  
+ 
+  width: max-content;
+}
+.pagination-item a{
+  /* display: block;
+  font-size: 1.2rem;
+ color: #23527c;
+  background-color: transparent; */
+  /* margin: 0rem 0.5rem; */
+  position: relative;
+  float: left;
+  padding: 6px 12px;
+  line-height: 1.428571429;
+  text-decoration: none;
+  color: #337ab7;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin-left: -1px;
+  
 
+}
+.pagination-item {
+  /* margin: 0rem 0.5rem; */
+  /* border: s1px solid teal; */
+  /* padding: 0.3rem 0.7rem; */
+  /* background-color: #eeeeee; */
+  /* border-color: #ddd; */
+}
+.activePage{
+  background-color: #23527c;
+  color:white;
+}
+.pagination-wrapper{
+  display: flex;
+  justify-content: flex-end;
+}
 @keyframes App-logo-float {
   0% {
     transform: translateY(0);
