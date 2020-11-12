@@ -1,13 +1,34 @@
-import React from 'react';
+import React from 'react'
 // import logo from './logo.svg';
 // import Counter from './features/Counter/Counter';
 // import {Counter} from "./features/counter/Counter"
-import './App.css';
-// import Button from './elements/button';
+import './App.css'
+
+// import { NavDropdown, DropDownItemLink } from './elements/navDropdown'
+import { Container } from './globalStyles'
+import GlobalStyle from './globalStyles'
+import Header from './components/Header/Header'
+import { PhotoSectionContainer } from './elements/photosContainer'
+import ImageListing from './components/ImageListing/ImageListing'
+import Filter from './components/Filter/Filter'
+import Pagination from './components/Pagination.js/Pagination'
+import BreadCrumb from './components/BreadCrumb/BreadCrumb'
 
 function App() {
   return (
-    <div className="App">
+    <div>
+      {/* <div>jhjhj</div> */}
+      <GlobalStyle />
+      <Container>
+        <Header />
+        <BreadCrumb />
+        <PhotoSectionContainer>
+          <Filter />
+          <ImageListing />
+        </PhotoSectionContainer>
+        <Pagination />
+      </Container>
+
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <Counter />
@@ -57,9 +78,8 @@ function App() {
       {/* <Button dark>
         clear
       </Button> */}
- 
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
