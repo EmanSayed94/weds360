@@ -30,7 +30,7 @@ const ImageSlider = ({ images }) => {
       <MainSliderContainer>
         <div>
           <NextImageContainer>
-            <img src={`./images/` + images[prevIndex]} />
+            <img src={`./images/suits/` + images[prevIndex]} />
             <SliderArrow>
               <FaChevronLeft onClick={slideLeft} />
             </SliderArrow>
@@ -38,12 +38,12 @@ const ImageSlider = ({ images }) => {
         </div>
 
         <img
-          style={{ height: '42rem' }}
-          src={`./images/` + images[index]}
+          style={{ height: '40rem' }}
+          src={`./images/suits/` + images[index]}
           alt={index}
         />
         <NextImageContainer>
-          <img src={`./images/` + images[nextIndex]} />
+          <img src={`./images/suits/` + images[nextIndex]} />
           <SliderArrow>
             <FaChevronRight onClick={slideRight} />
           </SliderArrow>
