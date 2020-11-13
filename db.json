@@ -1,0 +1,21 @@
+{
+    "images":[
+        {
+            "id":1,
+            "name":"Navy",
+            "imageUrl":"Navy",
+           "categoryId":1,
+           "relatedPhotos":["navy_1.jpeg","navy_2.jpeg","navy_3.jpeg","navy_4.jpeg"
+
+           ]
+
+        }
+    ],
+    "categories":[
+    {"id":1,"name":"suits","type":"him"},
+    {"id":2,"name":"health","type":"him"},
+    {"id":3,"name":"menGrooming","type":"him"},
+    {"id":4,"name":"fitness","type":"him"}
+ 
+    ]
+}

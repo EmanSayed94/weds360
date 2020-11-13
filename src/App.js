@@ -18,10 +18,16 @@ function App() {
       <GlobalStyle />
       <Container>
         <Header />
-        <ImageSlider
-          images={['Brand2.jpeg', 'Navy.jpeg', 'Brand2.jpeg', 'Navy.jpeg']}
-        />
-        {/* <HomePage /> */}
+        {/* <ImageSlider
+          images={[
+            'navy_1.jpeg',
+            'Navy.jpeg',
+            'navy_2.jpeg',
+            'navy_3.jpeg',
+            'navy_4.jpeg',
+          ]}
+        /> */}
+        <HomePage />
       </Container>
 
       {/* <header className="App-header">
