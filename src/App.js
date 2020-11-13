@@ -9,6 +9,7 @@ import { Container } from './globalStyles'
 import GlobalStyle from './globalStyles'
 import Header from './components/Header/Header'
 import HomePage from './features/Home/Home'
+import ImageSlider from './components/Slider/Slider'
 
 function App() {
   return (
@@ -17,7 +18,10 @@ function App() {
       <GlobalStyle />
       <Container>
         <Header />
-        <HomePage />
+        <ImageSlider
+          images={['Brand2.jpeg', 'Navy.jpeg', 'Brand2.jpeg', 'Navy.jpeg']}
+        />
+        {/* <HomePage /> */}
       </Container>
 
       {/* <header className="App-header">
