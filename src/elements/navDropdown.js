@@ -7,13 +7,14 @@ export const NavDropdown = styled.div`
   /* min-width: max-content; */
   position: absolute;
   top: 2.8rem;
-  z-index: 1000;
+  background-color: white;
+  z-index: 3000;
   box-shadow: 0 8px 16px 0 #d6cfcf;
   display: none;
   a {
     display: block;
   }
-  a:not(:last-child) {
+  div:not(:last-child) {
     border-bottom: 1px solid black;
   }
   &:hover {
@@ -23,7 +24,7 @@ export const NavDropdown = styled.div`
     display: none;
   }
 `
-export const DropDownItemLink = styled(Link)`
+export const DropDownItemLink = styled.div`
   display: block;
   padding: 2rem;
   color: black;

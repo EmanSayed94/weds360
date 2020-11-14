@@ -10,6 +10,7 @@ import GlobalStyle from './globalStyles'
 import Header from './components/Header/Header'
 import HomePage from './features/Home/Home'
 import ImageSlider from './components/Slider/Slider'
+import { Route, Switch } from 'react-router-dom'
 
 function App() {
   return (
@@ -18,6 +19,9 @@ function App() {
       <GlobalStyle />
       <Container>
         <Header />
+        <Switch>
+          <Route path="/home/suits" component={HomePage} />
+        </Switch>
         {/* <ImageSlider
           images={[
             'navy_1.jpeg',

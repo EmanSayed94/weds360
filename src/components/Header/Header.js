@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import {
   HeaderContainer,
   Nav,
@@ -12,8 +12,13 @@ import {
 import { FaUserPlus } from 'react-icons/fa'
 import { FiAlignJustify } from 'react-icons/fi'
 import { DropDownItemLink, NavDropdown } from './../../elements/navDropdown'
+import { useDispatch } from 'react-redux'
 
 const Header = (props) => {
+  // const dispatch = useDispatch()
+  // useEffect(() => {
+  //   dispatch({ type: 'CATEGORIES_FETCH' })
+  // })
   return (
     <HeaderContainer>
       <LanguageSwitch>
@@ -31,13 +36,11 @@ const Header = (props) => {
           <li>
             him
             <NavDropdown name="him" id="him">
-              <DropDownItemLink to="/suits">suits</DropDownItemLink>
-              <DropDownItemLink to="/health">Health</DropDownItemLink>
-              <DropDownItemLink to="/mensGrooming">
-                men's grooming
-              </DropDownItemLink>
-              <DropDownItemLink to="/fitness">fitness</DropDownItemLink>
-              <DropDownItemLink to="/more">more</DropDownItemLink>
+              <DropDownItemLink>suits</DropDownItemLink>
+              <DropDownItemLink>Health</DropDownItemLink>
+              <DropDownItemLink>men's grooming</DropDownItemLink>
+              <DropDownItemLink>fitness</DropDownItemLink>
+              <DropDownItemLink>more</DropDownItemLink>
             </NavDropdown>
           </li>
           <li>the wedding</li>
