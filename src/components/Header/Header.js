@@ -12,13 +12,19 @@ import {
 import { FaUserPlus } from 'react-icons/fa'
 import { FiAlignJustify } from 'react-icons/fi'
 import { DropDownItemLink, NavDropdown } from './../../elements/navDropdown'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
+import { useHistory } from 'react-router-dom'
 
 const Header = (props) => {
-  // const dispatch = useDispatch()
-  // useEffect(() => {
-  //   dispatch({ type: 'CATEGORIES_FETCH' })
-  // })
+  const dispatch = useDispatch()
+  const history = useHistory()
+  useEffect(() => {
+    dispatch({ type: 'CATEGORIES_FETCH' })
+  }, [dispatch])
+  const categories = useSelector((state) => state.category.categories)
+  const handleCategoryChange = (id) => {
+    history.push(`/services?category=${id}`)
+  }
   return (
     <HeaderContainer>
       <LanguageSwitch>
@@ -36,10 +42,16 @@ const Header = (props) => {
           <li>
             him
             <NavDropdown name="him" id="him">
-              <DropDownItemLink>suits</DropDownItemLink>
-              <DropDownItemLink>Health</DropDownItemLink>
-              <DropDownItemLink>men's grooming</DropDownItemLink>
-              <DropDownItemLink>fitness</DropDownItemLink>
+              {categories.map((cat) =>
+                cat.type === 'him' ? (
+                  <DropDownItemLink
+                    key={cat.id}
+                    onClick={() => handleCategoryChange(cat.id)}
+                  >
+                    {cat.name}
+                  </DropDownItemLink>
+                ) : null,
+              )}
               <DropDownItemLink>more</DropDownItemLink>
             </NavDropdown>
           </li>
