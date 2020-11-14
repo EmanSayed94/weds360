@@ -3,11 +3,12 @@ import ImageItem from '../ImageItem/ImageItem'
 
 import { PhotoContainer } from '../../elements/photosContainer'
 const ImageListing = (props) => {
-  //   const { imageArr = [1, 2, 3, 4, 5, 6, 7, 9] } = props
-  const imageArr = [1, 2, 3, 4, 5, 6, 7, 9]
+  const { images } = props
+
   return (
     <PhotoContainer>
-      {imageArr.length && imageArr.map((imageItem) => <ImageItem />)}
+      {images.length &&
+        images.map((imageItem) => <ImageItem image={imageItem} />)}
     </PhotoContainer>
   )
 }

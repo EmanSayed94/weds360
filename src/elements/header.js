@@ -66,6 +66,8 @@ export const NavBar = styled.ul`
     position: relative;
     font-weight: bold;
     text-transform: uppercase;
+    display: block;
+    padding: 9px 15px;
     &:hover {
       cursor: pointer;
       ${NavDropdown} {
