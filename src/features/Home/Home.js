@@ -10,11 +10,12 @@ import Pagination from '../../components/Pagination.js/Pagination'
 import { searchForImage, clearSearch } from '../../store/imagesSlice'
 
 const HomePage = () => {
+  const [currentPage, setCurrentPage] = useState(1)
   const dispatch = useDispatch()
-  let images = useSelector((state) => state.images.images)
   const { categoryId } = useParams()
 
-  const [currentPage, setCurrentPage] = useState(1)
+  let images = useSelector((state) => state.images.images)
+
   const pageSize = 6
   const startIndex = (currentPage - 1) * pageSize
   let imagesPerPage = images.slice(startIndex, startIndex + pageSize)

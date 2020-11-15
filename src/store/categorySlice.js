@@ -20,7 +20,7 @@ export const categorySlice = createSlice({
       let categories =
         searchValue === ''
           ? state.allCategoryByTypes
-          : categories.filter((cat) =>
+          : state.categoriesByType.filter((cat) =>
               cat.name.toLowerCase().includes(searchValue.toLowerCase()),
             )
 

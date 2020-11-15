@@ -24,7 +24,7 @@ const ImageSlider = ({ images }) => {
   }
   const prevIndex = index > 0 ? index - 1 : images.length - 1
   const nextIndex = index === images.length - 1 ? 0 : index + 1
-  console.log(nextIndex)
+
   return (
     images.length > 0 && (
       <MainSliderContainer>
