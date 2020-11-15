@@ -7,8 +7,11 @@ const ImageListing = (props) => {
 
   return (
     <PhotoContainer>
-      {images.length &&
-        images.map((imageItem) => <ImageItem image={imageItem} />)}
+      {images.length
+        ? images.map((imageItem, index) => (
+            <ImageItem key={imageItem.id} image={imageItem} />
+          ))
+        : 'No Data'}
     </PhotoContainer>
   )
 }

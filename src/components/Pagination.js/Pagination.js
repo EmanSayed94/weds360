@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import {
   ActivePaginationItem,
   PaginationContainer,
@@ -7,28 +6,35 @@ import {
   PaginationList,
 } from './../../elements/pagination'
 
-const Pagination = () => {
+const Pagination = (props) => {
+  const { pageSize, currentPage, count, handlePageChange } = props
+  const noOfPages = Math.ceil(count / pageSize)
+  const pages = Array.from({ length: noOfPages }, (v, k) => k + 1)
+
   return (
     <PaginationContainer>
       <PaginationList>
-        <PaginationItem>
-          <Link>Previous</Link>
-        </PaginationItem>
-        <PaginationItem>
-          <Link>1</Link>
-        </PaginationItem>
-        <PaginationItem>
-          <Link>2</Link>
-        </PaginationItem>
-        <PaginationItem>
-          <Link>3</Link>
-        </PaginationItem>
-        <ActivePaginationItem>
-          <Link>4</Link>
-        </ActivePaginationItem>
-        <PaginationItem>
-          <Link>Next</Link>
-        </PaginationItem>
+        <li>
+          <PaginationItem onClick={() => handlePageChange(currentPage - 1)}>
+            Previous
+          </PaginationItem>
+        </li>
+
+        {pages.map((page) => (
+          <li key={page} onClick={() => handlePageChange(page)}>
+            {page === currentPage ? (
+              <ActivePaginationItem>{page}</ActivePaginationItem>
+            ) : (
+              <PaginationItem>{page}</PaginationItem>
+            )}
+          </li>
+        ))}
+
+        <li>
+          <PaginationItem onClick={() => handlePageChange(currentPage + 1)}>
+            Next
+          </PaginationItem>
+        </li>
       </PaginationList>
     </PaginationContainer>
   )

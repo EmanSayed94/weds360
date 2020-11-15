@@ -19,10 +19,15 @@ function App() {
       <GlobalStyle />
       <Container>
         <Header />
+
         <Switch>
-          <Route path="/home/suits" component={HomePage} />
+          <Route path="/services?category=1" component={HomePage} />
         </Switch>
-        {/* <ImageSlider
+
+        <HomePage />
+      </Container>
+
+      {/* <ImageSlider
           images={[
             'navy_1.jpeg',
             'Navy.jpeg',
@@ -31,8 +36,6 @@ function App() {
             'navy_4.jpeg',
           ]}
         /> */}
-        <HomePage />
-      </Container>
 
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />

@@ -5,4 +5,6 @@ export const SearchInput = styled.input`
   border: 1px solid black;
   /* margin: 1.5rem 0; */
   height: 2.5rem;
+  font-size: 1.6rem;
+  padding: 0.5rem;
 `

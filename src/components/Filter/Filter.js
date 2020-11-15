@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {
   FilterButtonsContainer,
   FilterContainer,
@@ -6,14 +6,30 @@ import {
 import Button from './../../elements/button'
 import { SearchInput } from '../../elements/searchInput'
 
-const Filter = () => {
+const Filter = (props) => {
+  const { handleSearch, handleClearSearch } = props
+  const [searchValue, setSearchValue] = useState('')
+  console.log(searchValue)
   return (
     <FilterContainer>
       <FilterButtonsContainer>
-        <Button>Apply</Button>
-        <Button dark>Clear</Button>
+        <Button
+          onClick={() => {
+            setSearchValue('')
+            handleClearSearch()
+          }}
+        >
+          Clear
+        </Button>
+        <Button dark onClick={() => handleSearch(searchValue)}>
+          Apply
+        </Button>
       </FilterButtonsContainer>
-      <SearchInput />
+      <SearchInput
+        onChange={(e) => setSearchValue(e.target.value)}
+        placeholder="Search"
+        value={searchValue}
+      />
     </FilterContainer>
   )
 }
