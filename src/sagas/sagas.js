@@ -13,7 +13,6 @@ function* fetchImages(action) {
     yield put(getAllImagesAsync(images))
   } catch (error) {
     console.log(error.message)
-    // yield put()
   }
 }
 

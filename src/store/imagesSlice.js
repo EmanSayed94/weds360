@@ -3,12 +3,29 @@ import { createSlice } from '@reduxjs/toolkit'
 export const imagesSlice = createSlice({
   name: 'images',
   initialState: {
+    allImages: [],
     images: [],
   },
   reducers: {
     getAllImagesAsync: (state, action) => {
-      console.log(state.images)
       state.images = action.payload
+      state.allImages = action.payload
+    },
+    getImagesByCategoryId: (state, action) => {
+      state.images = action.payload
+      state.allImages = action.payload
+    },
+    searchForImage: (state, action) => {
+      const searchValue = action.payload
+      let images = state.allImages
+      images = images.filter((img) =>
+        img.name.toLowerCase().includes(searchValue.toLowerCase()),
+      )
+      console.log(images)
+      state.images = [...images]
+    },
+    clearSearch: (state, action) => {
+      state.images = [...state.allImages]
     },
     // decrement: (state) => {
     //   state.value -= 1
@@ -19,7 +36,11 @@ export const imagesSlice = createSlice({
   },
 })
 
-export const { getAllImagesAsync } = imagesSlice.actions
+export const {
+  getAllImagesAsync,
+  searchForImage,
+  clearSearch,
+} = imagesSlice.actions
 
 // The function below is called a thunk and allows us to perform async logic. It
 // can be dispatched like a regular action: `dispatch(incrementAsync(10))`. This

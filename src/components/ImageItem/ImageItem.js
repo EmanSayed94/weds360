@@ -3,7 +3,6 @@ import { ImageCard } from '../../elements/imageCard'
 
 const ImageItem = (props) => {
   const { name, imageUrl } = props.image
-  console.log(imageUrl)
   return (
     <ImageCard>
       <img src={`./images/${imageUrl}`} alt="b=navy brand" />
