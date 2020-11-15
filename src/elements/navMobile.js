@@ -4,9 +4,9 @@ export const NavMobileContainer = styled.div`
   display: none;
   @media only screen and (max-device-width: 768px) {
     background-image: url('./../images/background.jpg');
+    background-repeat: no-repeat;
     display: block;
     width: 90%;
-    background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
     font-family: monospace;

@@ -17,6 +17,7 @@ import {
   NavMobileItem,
   NavMobileItemSmall,
 } from './elements/navMobile'
+import CategoriesPage from './features/CategoriesPage/CategoriesPage'
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Header />
         <Switch>
           <Route path="/category/:categoryId" component={HomePage} />
+          <Route path="/categories" component={CategoriesPage} />
           <Route path="/photos/:imageId" component={PhotoDetailsPage} />
           <Route path="/" exact component={HomePage}>
             <Redirect to="/category/1" />

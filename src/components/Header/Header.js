@@ -13,7 +13,7 @@ import { FaUserPlus } from 'react-icons/fa'
 import { FiAlignJustify } from 'react-icons/fi'
 import { DropDownItemLink, NavDropdown } from './../../elements/navDropdown'
 import { useDispatch, useSelector } from 'react-redux'
-import { useHistory } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 import { NavMobileItem, NavMobileItemSmall } from '../../elements/navMobile'
 import { NavMobileContainer } from './../../elements/navMobile'
 
@@ -61,7 +61,11 @@ const Header = (props) => {
                     </DropDownItemLink>
                   ) : null,
                 )}
-                <DropDownItemLink>more</DropDownItemLink>
+                <DropDownItemLink>
+                  <Link style={{ color: 'black' }} to="/categories?type=him">
+                    more
+                  </Link>
+                </DropDownItemLink>
               </NavDropdown>
             </li>
             <li>the wedding</li>
