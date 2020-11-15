@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { PhotoSectionContainer } from '../../elements/photosContainer'
 import { useDispatch, useSelector } from 'react-redux'
-import { useLocation } from 'react-router-dom'
+import { useLocation, useParams } from 'react-router-dom'
 
 import BreadCrumb from '../../components/BreadCrumb/BreadCrumb'
 import Filter from '../../components/Filter/Filter'
@@ -12,8 +12,9 @@ import { searchForImage, clearSearch } from '../../store/imagesSlice'
 const HomePage = () => {
   const dispatch = useDispatch()
   let images = useSelector((state) => state.images.images)
-  const query = new URLSearchParams(useLocation().search)
-  const categoryId = query.get('category')
+  // const query = new URLSearchParams(useLocation().search)
+  // const categoryId = query.get('category')
+  const { categoryId } = useParams()
 
   const [currentPage, setCurrentPage] = useState(1)
   const pageSize = 6

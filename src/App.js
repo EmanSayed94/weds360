@@ -9,9 +9,9 @@ import { Container } from './globalStyles'
 import GlobalStyle from './globalStyles'
 import Header from './components/Header/Header'
 import HomePage from './features/Home/Home'
-import ImageSlider from './components/Slider/Slider'
-import { Route, Switch } from 'react-router-dom'
+import { Redirect, Route, Switch } from 'react-router-dom'
 import Footer from './components/Footer/Footer'
+import PhotoDetailsPage from './features/PhotoDetailsPage/PhotoDetailsPage'
 
 function App() {
   return (
@@ -22,10 +22,14 @@ function App() {
         <Header />
 
         <Switch>
-          <Route path="/services?category=1" component={HomePage} />
+          <Route path="/category/:categoryId" component={HomePage} />
+          <Route path="/photos/:imageId" component={PhotoDetailsPage} />
+          <Route path="/" exact component={HomePage}>
+            <Redirect to="/category/1" />
+          </Route>
         </Switch>
-
-        <HomePage />
+        {/* <PhotoDetailsPage /> */}
+        {/* <HomePage /> */}
       </Container>
       <Footer />
 
@@ -38,56 +42,6 @@ function App() {
             'navy_4.jpeg',
           ]}
         /> */}
-
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <span>
-          <span>Learn </span>
-          <a
-            className="App-link"
-            href="https://reactjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux-toolkit.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux Toolkit
-          </a>
-          ,<span> and </span>
-          <a
-            className="App-link"
-            href="https://react-redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React Redux
-          </a>
-        </span>
-      </header> */}
-      {/* <Button ></Button> */}
-      {/* <Button dark>
-        clear
-      </Button> */}
     </div>
   )
 }

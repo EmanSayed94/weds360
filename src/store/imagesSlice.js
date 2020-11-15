@@ -5,6 +5,7 @@ export const imagesSlice = createSlice({
   initialState: {
     allImages: [],
     images: [],
+    image: '',
   },
   reducers: {
     getAllImagesAsync: (state, action) => {
@@ -15,6 +16,10 @@ export const imagesSlice = createSlice({
       state.images = action.payload
       state.allImages = action.payload
     },
+    getImageByIdAsync: (state, action) => {
+      console.log(action.payload)
+      state.image = action.payload
+    },
     searchForImage: (state, action) => {
       const searchValue = action.payload
       let images = state.allImages
@@ -24,9 +29,11 @@ export const imagesSlice = createSlice({
       console.log(images)
       state.images = [...images]
     },
+
     clearSearch: (state, action) => {
       state.images = [...state.allImages]
     },
+
     // decrement: (state) => {
     //   state.value -= 1
     // },
@@ -40,6 +47,7 @@ export const {
   getAllImagesAsync,
   searchForImage,
   clearSearch,
+  getImageByIdAsync,
 } = imagesSlice.actions
 
 // The function below is called a thunk and allows us to perform async logic. It

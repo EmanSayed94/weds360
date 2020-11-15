@@ -23,7 +23,7 @@ const Header = (props) => {
   }, [dispatch])
   const categories = useSelector((state) => state.category.categories)
   const handleCategoryChange = (id) => {
-    history.push(`/services?category=${id}`)
+    history.push(`/category/${id}`)
   }
   return (
     <HeaderContainer>
@@ -58,7 +58,7 @@ const Header = (props) => {
           <li>the wedding</li>
         </NavBar>
         <NavLogo>
-          <img src="logo.png" alt="Logo" />
+          <img src="./../images/logo.png" alt="Logo" />
         </NavLogo>
         <NavBar>
           {' '}

@@ -4,6 +4,7 @@
             "id":1,
             "name":"Navy",
             "imageUrl":"suits-1.jpeg",
+            "description":"men Tailor",
            "categoryId":1,
            "relatedPhotos":["navy_1.jpeg","navy_2.jpeg","navy_3.jpeg","navy_4.jpeg"
 
@@ -13,6 +14,7 @@
             "id":2,
             "name":"Mr. Tuxedos",
             "imageUrl":"suits-2.jpeg",
+            "description":"",
            "categoryId":1,
            "relatedPhotos":[]
 
@@ -21,6 +23,7 @@
             "id":3,
             "name":"MOAAZ EL BEHAIRY",
             "imageUrl":"suits-3.jpeg",
+            "description":"",
            "categoryId":1,
            "relatedPhotos":[]
 
@@ -28,6 +31,7 @@
             "id":4,
             "name":"EL Eskafy",
             "imageUrl":"suits-4.jpeg",
+            "description":"",
            "categoryId":1,
            "relatedPhotos":[]
 
@@ -36,6 +40,7 @@
             "id":5,
             "name":"Suits Me",
             "imageUrl":"suits-5.png",
+            "description":"",
            "categoryId":1,
            "relatedPhotos":[]
 
@@ -43,6 +48,7 @@
             "id":6,
             "name":"Hoxton House",
             "imageUrl":"suits-6.png",
+            "description":"",
            "categoryId":1,
            "relatedPhotos":[]
 
@@ -50,6 +56,7 @@
             "id":7,
             "name":"EMS BODY FIT EGYPT",
             "imageUrl":"fitness-1.png",
+            "description":" bla bla",
            "categoryId":4,
            "relatedPhotos":[]
 
@@ -58,6 +65,7 @@
             "id":8,
             "name":"IGNITE EGYPT",
             "imageUrl":"fitness-2.png",
+            "description":"",
            "categoryId":4,
            "relatedPhotos":[]
 
@@ -66,6 +74,7 @@
             "id":9,
             "name":"TITANS GYM",
             "imageUrl":"fitness-3.png",
+            "description":"",
            "categoryId":4,
            "relatedPhotos":[]
 
@@ -74,6 +83,7 @@
             "id":10,
             "name":"BALANCE GYM",
             "imageUrl":"fitness-4.png",
+            "description":"",
            "categoryId":4,
            "relatedPhotos":[]
 
@@ -82,6 +92,7 @@
             "id":11,
             "name":"H2O GYM",
             "imageUrl":"fitness-5.png",
+            "description":"",
            "categoryId":4,
            "relatedPhotos":[]
 
@@ -91,6 +102,7 @@
             "id":12,
             "name":"Suits Me",
             "imageUrl":"fitness-6.png",
+            "description":"",
            "categoryId":4,
            "relatedPhotos":[]
 
@@ -100,6 +112,7 @@
             "id":13,
             "name":"Suits Me",
             "imageUrl":"fitness-7.png",
+            "description":"",
            "categoryId":4,
            "relatedPhotos":[]
 
@@ -108,15 +121,17 @@
             "id":14,
             "name":"Suits Me",
             "imageUrl":"fitness-8.png",
+            "description":"",
            "categoryId":4,
            "relatedPhotos":[]
 
         
         },
         {
-            "id":15,
+            "id":4,
             "name":"Suits Me",
             "imageUrl":"fitness-9.png",
+            "description":"",
            "categoryId":4,
            "relatedPhotos":[]
 
