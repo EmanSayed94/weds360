@@ -10,12 +10,12 @@ const BreadCrumb = () => {
   return (
     <BreadCrumbContainer>
       <h3>
-        <Link to="">gallery</Link>
+        <Link to="">Him</Link>
       </h3>
       <BreadCrumbIcon>
         <FaAngleRight />
       </BreadCrumbIcon>
-      <h2>Wedding ideas</h2>
+      <h2>Suits</h2>
     </BreadCrumbContainer>
   )
 }

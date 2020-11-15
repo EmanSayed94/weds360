@@ -1,8 +1,9 @@
 import { call, put, takeEvery } from 'redux-saga/effects'
 import axios from 'axios'
-import { getAllImagesAsync } from '../store/imagesSlice'
+import { getAllImagesAsync, getImageByIdAsync } from '../store/imagesSlice'
 import { getAllcategoriesAsync } from '../store/categorySlice'
 
+///////////////// Images /////////////////
 function* fetchImages(action) {
   try {
     const images = yield call(() => {
@@ -15,7 +16,24 @@ function* fetchImages(action) {
     console.log(error.message)
   }
 }
+function* fetchImageById(action) {
+  try {
+    const image = yield call(() => {
+      return axios
+        .get(`http://localhost:3333/images/${action.payload}`)
+        .then((response) => {
+          return response.data
+        })
+    })
+    yield console.log(image)
+    yield put(getImageByIdAsync(image))
+  } catch (error) {
+    console.log(error.message)
+    // yield put()
+  }
+}
 
+///////////////// categories ///////////////////
 function* fetchCategories(action) {
   try {
     const categories = yield call(() => {
@@ -50,6 +68,7 @@ function* mySaga(payload) {
   yield console.log(payload)
   yield takeEvery('IMAGES_FETCH', fetchImages)
   yield takeEvery('IMAGES_FETCH_BY_CATEGORY_ID', fetchImagesByCategoryId)
+  yield takeEvery('FETCH_IMAGE_BY_ID', fetchImageById)
   yield takeEvery('CATEGORIES_FETCH', fetchCategories)
 }
 

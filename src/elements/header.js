@@ -5,6 +5,7 @@ import { DropDownItemLink, NavDropdown } from './navDropdown'
 
 export const HeaderContainer = styled.header`
   /* display: flex; */
+  margin-bottom: 1rem;
   @media only screen and (max-device-width: 768px) {
     display: flex;
   }
