@@ -52,7 +52,9 @@
            "categoryId":1,
            "relatedPhotos":[]
 
-        },        {
+        },   
+        
+        {
             "id":7,
             "name":"EMS BODY FIT EGYPT",
             "imageUrl":"fitness-1.png",
@@ -100,9 +102,9 @@
         },
         {
             "id":12,
-            "name":"Suits Me",
+            "name":"GOLD'S GYM EGYPT",
             "imageUrl":"fitness-6.png",
-            "description":"",
+            "description":"GOLD'S GYM EGYPT ,we are the best",
            "categoryId":4,
            "relatedPhotos":[]
 
@@ -110,32 +112,172 @@
         },
         {
             "id":13,
-            "name":"Suits Me",
+            "name":"CROSSFIT HUSTLE",
             "imageUrl":"fitness-7.png",
-            "description":"",
+            "description":"CROSSFIT HUSTLE, best gym",
            "categoryId":4,
            "relatedPhotos":[]
 
         },
         {
             "id":14,
-            "name":"Suits Me",
+            "name":"TRANSFORMERS FITNESS CENTER",
             "imageUrl":"fitness-8.png",
-            "description":"",
+            "description":"TRANSFORMERS FITNESS CENTER , gym it and make your form",
            "categoryId":4,
            "relatedPhotos":[]
 
         
         },
         {
-            "id":4,
-            "name":"Suits Me",
+            "id":15,
+            "name":"TD Athelitics",
             "imageUrl":"fitness-9.png",
-            "description":"",
+            "description":"best place to make your form",
            "categoryId":4,
            "relatedPhotos":[]
 
+        } , {
+            "id":16,
+            "name":"Bloom Diet Experts",
+            "imageUrl":"health-1.jpeg",
+            "description":" we take care of your health",
+           "categoryId":2,
+           "relatedPhotos":[]
+
+        },   {
+            "id":17,
+            "name":"The Re RElation Retreat",
+            "imageUrl":"health-2.png",
+            "description":" bla bla",
+           "categoryId":2,
+           "relatedPhotos":[]
+
+        },   {
+            "id":18,
+            "name":"Psychologist in Egypt",
+            "imageUrl":"health-3.png",
+            "description":" best place to take care of your health",
+           "categoryId":2,
+           "relatedPhotos":[]
+
+        },   {
+            "id":19,
+            "name":"SERENITY PSYCHOLOGY CENTER",
+            "imageUrl":"health-4.png",
+            "description":" bla bla",
+           "categoryId":2,
+           "relatedPhotos":[]
+
+        },   {
+            "id":20,
+            "name":"INSIDE-OUT COUNSELING CENTER",
+            "imageUrl":"health-5.png",
+            "description":" bla bla",
+           "categoryId":2,
+           "relatedPhotos":[]
+
+        },   {
+            "id":21,
+            "name":"UPLIFT16",
+            "imageUrl":"health-6.png",
+            "description":" bla bla",
+           "categoryId":2,
+           "relatedPhotos":[]
+
+        },  
+        
+        
+        {
+            "id":22,
+            "name":"Beky Barber",
+            "imageUrl":"grooming-1.png",
+            "description":" bla bla",
+           "categoryId":3,
+           "relatedPhotos":[]
+
+        },   {
+            "id":23,
+            "name":"Jackob's BarberShop",
+            "imageUrl":"grooming-2.png",
+            "description":" bla bla",
+           "categoryId":3,
+           "relatedPhotos":[]
+
+        }     ,   {
+            "id":24,
+            "name":"Beky Barber",
+            "imageUrl":"grooming-1.png",
+            "description":" bla bla",
+           "categoryId":3,
+           "relatedPhotos":[]
+
+        },   {
+            "id":25,
+            "name":"Jackob's BarberShop",
+            "imageUrl":"grooming-2.png",
+            "description":" bla bla",
+           "categoryId":3,
+           "relatedPhotos":[]
+
+        }   ,     {
+            "id":26,
+            "name":"Beky Barber",
+            "imageUrl":"grooming-1.png",
+            "description":" bla bla",
+           "categoryId":3,
+           "relatedPhotos":[]
+
+        },   {
+            "id":27,
+            "name":"Jackob's BarberShop",
+            "imageUrl":"grooming-2.png",
+            "description":" bla bla",
+           "categoryId":3,
+           "relatedPhotos":[]
+
+        }      ,  {
+            "id":28,
+            "name":"Beky Barber",
+            "imageUrl":"grooming-1.png",
+            "description":" bla bla",
+           "categoryId":3,
+           "relatedPhotos":[]
+
+        },   {
+            "id":29,
+            "name":"Jackob's BarberShop",
+            "imageUrl":"grooming-2.png",
+            "description":" bla bla",
+           "categoryId":3,
+           "relatedPhotos":[]
+
+        }       , {
+            "id":30,
+            "name":"Beky Barber",
+            "imageUrl":"grooming-1.png",
+            "description":" bla bla",
+           "categoryId":3,
+           "relatedPhotos":[]
+
+        },   {
+            "id":31,
+            "name":"Jackob's BarberShop",
+            "imageUrl":"grooming-2.png",
+            "description":" bla bla",
+           "categoryId":3,
+           "relatedPhotos":[]
+
+        }      ,  {
+            "id":32,
+            "name":"Beky Barber",
+            "imageUrl":"grooming-1.png",
+            "description":" bla bla",
+           "categoryId":3,
+           "relatedPhotos":[]
+
         }
+       
     ],
     "categories":[
     {"id":1,"name":"suits","type":"him"},

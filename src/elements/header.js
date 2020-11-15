@@ -8,6 +8,7 @@ export const HeaderContainer = styled.header`
   margin-bottom: 1rem;
   @media only screen and (max-device-width: 768px) {
     display: flex;
+    /* padding: 0 3rem; */
   }
 `
 export const LanguageSwitch = styled.div`

@@ -24,6 +24,9 @@ export const PaginationItem = styled.div`
   &:last-child {
     border-right: 1px solid #ddd;
   }
+  &:hover{
+    cursor:pointer;
+  }
 `
 export const ActivePaginationItem = styled(PaginationItem)`
   color: white;

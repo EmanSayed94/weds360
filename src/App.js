@@ -12,15 +12,20 @@ import HomePage from './features/Home/Home'
 import { Redirect, Route, Switch } from 'react-router-dom'
 import Footer from './components/Footer/Footer'
 import PhotoDetailsPage from './features/PhotoDetailsPage/PhotoDetailsPage'
+import {
+  NavMobileContainer,
+  NavMobileItem,
+  NavMobileItemSmall,
+} from './elements/navMobile'
 
 function App() {
   return (
     <div>
       {/* <div>jhjhj</div> */}
       <GlobalStyle />
+
       <Container>
         <Header />
-
         <Switch>
           <Route path="/category/:categoryId" component={HomePage} />
           <Route path="/photos/:imageId" component={PhotoDetailsPage} />
