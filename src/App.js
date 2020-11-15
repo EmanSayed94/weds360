@@ -11,6 +11,7 @@ import Header from './components/Header/Header'
 import HomePage from './features/Home/Home'
 import ImageSlider from './components/Slider/Slider'
 import { Route, Switch } from 'react-router-dom'
+import Footer from './components/Footer/Footer'
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
 
         <HomePage />
       </Container>
+      <Footer />
 
       {/* <ImageSlider
           images={[
