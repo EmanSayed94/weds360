@@ -26,7 +26,7 @@ export const Container = styled.div`
   /* padding: 0 5rem; */
   @media only screen and (max-device-width: 768px) {
     width: 100%;
-    padding: 0 3rem;
+    padding: 0 2rem;
   }
 `
 export default GlobalStyle

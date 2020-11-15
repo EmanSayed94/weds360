@@ -10,6 +10,7 @@ export const PhotoDetailsContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     div {
       width: 90%;
     }

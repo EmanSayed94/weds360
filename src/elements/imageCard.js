@@ -13,6 +13,9 @@ export const ImageCard = styled(Link)`
     padding-top: 1rem;
     color: black;
   }
-
+  @media only screen and (max-device-width: 425px) {
+    width: 90%;
+    font-size: 1.2rem;
+  }
   /* width: */
 `
