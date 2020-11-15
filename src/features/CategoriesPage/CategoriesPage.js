@@ -41,6 +41,7 @@ const CategoriesPage = () => {
   const handleToggle = () => {
     setDisplayCategory(!displayCategory)
   }
+
   return (
     <>
       <CategoriesSearchContainer>

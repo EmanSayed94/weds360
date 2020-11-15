@@ -9,7 +9,7 @@ import { SearchInput } from '../../elements/searchInput'
 const Filter = (props) => {
   const { handleSearch, handleClearSearch } = props
   const [searchValue, setSearchValue] = useState('')
-  console.log(searchValue)
+
   return (
     <FilterContainer>
       <FilterButtonsContainer>

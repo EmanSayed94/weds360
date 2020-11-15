@@ -18,7 +18,7 @@ const Footer = () => {
         </FooterIcons>
       </FooterLogo>
       <div>
-        © Copyright <Link>Plus360</Link>. All Rights Reserved
+        © Copyright <Link to="">Plus360</Link>. All Rights Reserved
       </div>
       <FooterTerms>Terms & Conditions Privacy Policy</FooterTerms>
     </FooterContainer>
