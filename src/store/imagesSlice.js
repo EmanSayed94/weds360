@@ -17,7 +17,6 @@ export const imagesSlice = createSlice({
       state.allImages = action.payload
     },
     getImageByIdAsync: (state, action) => {
-      console.log(action.payload)
       state.image = action.payload
     },
     searchForImage: (state, action) => {
@@ -26,7 +25,7 @@ export const imagesSlice = createSlice({
       images = images.filter((img) =>
         img.name.toLowerCase().includes(searchValue.toLowerCase()),
       )
-      console.log(images)
+
       state.images = [...images]
     },
 

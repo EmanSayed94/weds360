@@ -11,8 +11,8 @@ import { searchForImage, clearSearch } from '../../store/imagesSlice'
 
 const HomePage = () => {
   const [currentPage, setCurrentPage] = useState(1)
-  const dispatch = useDispatch()
   const { categoryId } = useParams()
+  const dispatch = useDispatch()
 
   let images = useSelector((state) => state.images.images)
 
