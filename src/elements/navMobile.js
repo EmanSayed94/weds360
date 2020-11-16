@@ -33,6 +33,9 @@ export const NavMobileItem = styled.div`
     &:nth-child(odd) {
       border-right: 2px solid white;
     }
+    a {
+      color: white;
+    }
   }
 `
 export const NavMobileItemSmall = styled(NavMobileItem)`

@@ -7,6 +7,7 @@ import {
   CategoryCard,
   CategoryCardContainer,
   AllCategoriesContainer,
+  AllCategoriesButton,
 } from './../../elements/categoryCard'
 
 import {
@@ -45,8 +46,11 @@ const CategoriesPage = () => {
   return (
     <>
       <CategoriesSearchContainer>
-        <CategoriesSearch placeholder="FIND CATEGORIES HERE"></CategoriesSearch>
-        <ArrowIcon onClick={handleToggle} />
+        {/* <CategoriesSearch placeholder="FIND CATEGORIES HERE"></CategoriesSearch> */}
+        <AllCategoriesButton onClick={handleToggle}>
+          FIND CATEGORIES HERE
+          <ArrowIcon />
+        </AllCategoriesButton>
 
         {/* <CategoriesSearch/> */}
         <CategoriesSearch placeholder="Search" onChange={handleInputChange} />

@@ -89,7 +89,9 @@ const Header = (props) => {
         <NavMobileContainer>
           <NavMobileItem>360 Planner</NavMobileItem>
           <NavMobileItem>For The Wedding</NavMobileItem>
-          <NavMobileItem>Him</NavMobileItem>
+          <NavMobileItem>
+            <Link to="/categories?type=him">Him</Link>
+          </NavMobileItem>
           <NavMobileItem>Her</NavMobileItem>
           <NavMobileItemSmall>Check List</NavMobileItemSmall>
           <NavMobileItemSmall>Guest List</NavMobileItemSmall>
