@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { PhotoSectionContainer } from '../../elements/photosContainer'
 import { useDispatch, useSelector } from 'react-redux'
-import { useLocation, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 
 import BreadCrumb from '../../components/BreadCrumb/BreadCrumb'
 import Filter from '../../components/Filter/Filter'

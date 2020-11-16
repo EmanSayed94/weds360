@@ -51,5 +51,5 @@ export const ArrowIcon = styled(FaAngleDown)`
   font-size: 1.6rem;
   position: absolute;
   left: 40%;
-  top: 30%;
+  top: 26%;
 `
