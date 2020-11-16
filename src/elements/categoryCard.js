@@ -45,11 +45,42 @@ export const AllCategoriesContainer = styled.div`
     text-transform: capitalize;
     width: 50px;
   }
+
+  @media only screen and (max-device-width: 768px) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    height: max-content;
+    div {
+      font-size: 1.2rem;
+      width: 100px;
+      margin-bottom: 0.5rem;
+    }
+  }
 `
 
 export const ArrowIcon = styled(FaAngleDown)`
   font-size: 1.6rem;
   position: absolute;
-  left: 40%;
-  top: 26%;
+  left: 85%;
+    top: 25%;
+}
+`
+export const AllCategoriesButton = styled.div`
+  width: 43%;
+  height: 4rem;
+  border: 2px solid black;
+  text-align: center;
+  color: black;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  @media only screen and (max-device-width: 768px) {
+    font-size: 1.2rem;
+  }
 `

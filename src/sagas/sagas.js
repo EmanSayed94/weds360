@@ -28,7 +28,7 @@ function* fetchImageById(action) {
           return response.data
         })
     })
-    yield console.log(image)
+
     yield put(getImageByIdAsync(image))
   } catch (error) {
     console.log(error.message)
@@ -76,7 +76,7 @@ function* getCateoriesByType(action) {
           return response.data
         })
     })
-    yield console.log(categories)
+
     yield put(getCateoriesByTypeAsync(categories))
   } catch (error) {
     console.log(error.message)
