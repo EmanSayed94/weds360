@@ -1,30 +1,20 @@
 import React from 'react'
-// import logo from './logo.svg';
-// import Counter from './features/Counter/Counter';
-// import {Counter} from "./features/counter/Counter"
-import './App.css'
+import { Redirect, Route, Switch } from 'react-router-dom'
 
-// import { NavDropdown, DropDownItemLink } from './elements/navDropdown'
+import './App.css'
 import { Container } from './globalStyles'
 import GlobalStyle from './globalStyles'
 import Header from './components/Header/Header'
-import HomePage from './features/Home/Home'
-import { Redirect, Route, Switch } from 'react-router-dom'
+import HomePage from './containers/Home/Home'
 import Footer from './components/Footer/Footer'
-import PhotoDetailsPage from './features/PhotoDetailsPage/PhotoDetailsPage'
-import {
-  NavMobileContainer,
-  NavMobileItem,
-  NavMobileItemSmall,
-} from './elements/navMobile'
-import CategoriesPage from './features/CategoriesPage/CategoriesPage'
+import PhotoDetailsPage from './containers/PhotoDetailsPage/PhotoDetailsPage'
+
+import CategoriesPage from './containers/CategoriesPage/CategoriesPage'
 
 function App() {
   return (
     <div>
-      {/* <div>jhjhj</div> */}
       <GlobalStyle />
-
       <Container>
         <Header />
         <Switch>
@@ -35,11 +25,8 @@ function App() {
             <Redirect to="/category/1" />
           </Route>
         </Switch>
-        {/* <PhotoDetailsPage /> */}
-        {/* <HomePage /> */}
       </Container>
       <Footer />
-
       {/* <ImageSlider
           images={[
             'navy_1.jpeg',
